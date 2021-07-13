@@ -44,7 +44,7 @@ public class Ponte extends Thread {
     @Override
     public void run(){
         String item;
-        for (int i = 0; i<6; i++){
+        while(true){
             try {
                 item = retirar();
                 System.out.println("Passou: "+item);
